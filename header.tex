@@ -1,0 +1,168 @@
+% format tex
+\input musixtex
+\newif\ifcorrectionmode
+
+% This part musics can contain some correction with brackets,
+%   e.g. [\ff], [\crescendo{}] etc.
+% If you wont these correction, replace the line after here
+%   as \correctionmodetrue instead of \correctionmodefalse.
+\correctionmodefalse
+
+% general style [A4:default]
+\musicparskip\parindent12mm
+\bigaccid
+\nopagenumbers % supress footlines
+\headline={\ifnum\pageno=1\else \ifodd\pageno\rightheadline \else\leftheadline\fi \fi}
+\def\rightheadline{\tenrm\hfil\folio}
+\def\leftheadline{\tenrm\folio\hfil}
+%voffset=1\baselineskip
+\nostartrule
+% bar number without box
+\def\writebarno{\llap{\tentt\the\barno\barnoadd}}%
+\def\raisebarno{1.7\Interligne}%
+\def\shiftbarno{3.0\internote}%
+\def\writezbarno{}%
+
+% title
+\font\sansseriffifteen=cmss10 at 15pt
+\font\sansserifseventeen=cmss17 at 17pt
+%font\sansserifseventeenwide=cmss8 at 17pt
+\font\sansseriftwenty=cmss17 at 20pt
+\def\parttitle#1{
+  \centerline{\BIGfont Neunte Symphonie}
+  \hbox to \hsize{\boxit{\sansserifseventeen{#1}}\hfill\nobreak{\medtype Gustav Mahler}}%
+}
+\def\movement#1{
+	\centerline{\sansseriftwenty #1}\smallskip
+}
+
+%% original macros %%
+%
+\def\guideexcerptstyle{%
+  \def\notes{\vnotes1\elemskip}%
+  \def\Notes{\vnotes1.3\elemskip}%
+  \def\Notesp{\vnotes1.6\elemskip}%
+  \def\NOtes{\vnotes2\elemskip}%
+  \def\NOtesp{\vnotes2.2\elemskip}%
+  \def\NOTes{\vnotes2.5\elemskip}%
+  \def\NOTesp{\vnotes3.0\elemskip}%
+  \def\NOTEs{\vnotes3.5\elemskip}%
+%\afterruleskip4pt%
+}%
+\def\guideexcerptninestyle{%
+  \def\notes{\vnotes1\elemskip}%
+  \def\Notes{\vnotes1.2\elemskip}%
+  \def\Notesp{\vnotes1.4\elemskip}%
+  \def\NOtes{\vnotes2.0\elemskip}%
+  \def\NOtesp{\vnotes2.2\elemskip}%
+}%
+\def\ninestyle{%
+  \def\notes{\vnotes1.2\elemskip}%
+  \def\Notes{\vnotes2.0\elemskip}%
+  \def\Notesp{\vnotes2.3\elemskip}%
+  \def\NOtes{\vnotes2.7\elemskip}%
+  \def\NOtesp{\vnotes3.0\elemskip}%
+  \def\NOTesp{\vnotes3.5\elemskip}%
+}%
+\def\defaultskipstyle{%
+  \def\notes{\vnotes2\elemskip}%
+  \def\Notes{\vnotes3\elemskip}%
+  \def\Notesp{\vnotes3.5\elemskip}%
+  \def\NOtes{\vnotes4\elemskip}%
+  \def\NOtesp{\vnotes4.5\elemskip}%
+  \def\NOTes{\vnotes5\elemskip}%
+  \def\NOTesp{\vnotes5.5\elemskip}%
+  \def\NOTEs{\vnotes6\elemskip}%
+%\afterruleskip8pt%
+}%
+\def\notabene#1#2{\znotes\uptext{\kern-\afterruleskip\raise #1\hbox{\medtype\bf #2}}\enotes}
+\def\notabenenb#1#2{\znotes\uptext{\raise #1\hbox{\medtype\bf #2}}\enotes}
+\def\rehearsalmark#1#2#3{\znotes\loffset{#2}{\uptext{\raise #3\boxit{\medtype\bf#1}}}\enotes}
+\def\trembl#1#2#3{\loffset{.5}{\ibl#1#2{#3}}\roffset{.5}{\tbl#1}}
+\def\trembu#1#2#3{\loffset{.5}{\ibu#1#2{#3}}\roffset{.5}{\tbu#1}}
+\def\trembbbl#1#2#3{\loffset{.5}{\ibbbl#1#2{#3}}\roffset{.5}{\tbl#1}}
+\def\trembbbu#1#2#3{\loffset{.5}{\ibbbu#1#2{#3}}\roffset{.5}{\tbu#1}}
+\def\rolleightl#1#2#3#4{\stemlength{5.4}\roffset{.5}{\ibbbl{#1}{#2}{#3}}\isluru{#1}{#2}\ql{#2}\loffset{.5}{\tbl{#1}}\tslur{#1}{#4}\ql{#4}\stemlength{4.66}}%
+\def\rolleightu#1#2#3#4{\stemlength{5.4}\roffset{.5}{\ibbbu{#1}{#2}{#3}}\islurd{#1}{#2}\qu{#2}\loffset{.5}{\tbu{#1}}\tslur{#1}{#4}\qu{#4}\stemlength{4.66}}%
+\def\rollsixl#1#2#3#4{\zcharnote{#2}{\raise2\Interligne\hbox{\kern.5\noteskip\hbox{\eightit6}}}\roffset{.5}{\ibbl{#1}{#2}{#3}}\isluru{#1}{#2}\qlp{#2}\loffset{.5}{\tbl{#1}}\tslur{#1}{#4}\qlp{#4}}%
+\def\rollsixu#1#2#3#4{\zcharnote{#2}{\raise5\Interligne\hbox{\kern.63\noteskip\hbox{\eightit6}}}\roffset{.5}{\ibbu{#1}{#2}{#3}}\islurd{#1}{#2}\qup{#2}\loffset{.5}{\tbu{#1}}\tslur{#1}{#4}\qup{#4}}%
+\def\shottrille#1{\zcharnote{#1}{\it tr}}%
+\def\smallshottrille#1{\zcharnote{#1}{\smalltype\it tr}}%
+\def\matz#1{\zcharnote{#1}{\crescendo{.49\noteskip}\kern.51\noteskip\decrescendo{.49\noteskip}}}%
+\def\textleader#1#2{\hbox to#1\elemskip{{#2}\leaders\hbox to2em{-\hss}\hfill\llap{-\enskip}}}%
+\def\gest#1{\zcharnote{#1}{\vrule width2pt height.4pt depth.4pt\vrule height2.2pt depth2.2pt width.8pt\vrule width2pt height.4pt depth.4pt}}%
+\def\excerptpause#1{\def\atnextbar{\znotes\centerbar{\liftpause{#1}}\enotes}}%
+
+% long rests
+\edef\catcodeat{\the\catcode`\@}\catcode`\@=11
+ \newcount\b@rnob@ck%
+\def\incrementbar#1{%
+  \b@rnob@ck=#1%
+  \advance\b@rnob@ck by -1%
+  \advance\b@rnob@ck by \barno%
+  \barno=\b@rnob@ck%
+}%
+\def\s@r{\vrule\@width.6\p@\@height1\h@lf\internote\@depth1\h@lf\internote}%
+\def\overlong{%
+    \s@r
+    \vrule\@width8.33\elemskip\@height\h@lf\internote\@depth\h@lf\internote
+    \s@r}
+\def\longrest#1{%
+  \ifnum#1>4
+    \znotes\uptext{\lower3\Interligne\hbox{\overlong}}\enotes
+    \znotes\uptext{\lower8\Interligne\hbox to 8.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \addspace{10\elemskip}%
+  \else\ifnum#1=4
+    \znotes\uptext{\lower8\Interligne\hbox to 8.00\elemskip{\hss{\bigtype#1}\hss}}\enotes
+	\qspace
+    \Notes\sk\PAUSe\sk\enotes
+	%addspace{7.5\elemskip}%
+	%def\atnextbar{\znotes\centerbar{\PAUSe}\enotes}%
+  \else\ifnum#1=3
+    \znotes\uptext{\lower8\Interligne\hbox to 6.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \notes\sk\PAuse\pause\sk\enotes
+	%addspace{7.0\elemskip}%
+	%def\atnextbar{\znotes\centerbar{\PAuse\qsk\pause}\enotes}%
+  \else\ifnum#1=2
+    \znotes\uptext{\lower8\Interligne\hbox to 4.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \notes\sk\PAuse\sk\enotes
+	%addspace{6.5\elemskip}%
+	%def\atnextbar{\znotes\centerbar{\PAuse}\enotes}%
+  \else%ifnum#1=1
+    \NOtes\hsk\pause\enotes
+	%addspace{6.0\elemskip}%
+	%def\atnextbar{\znotes\centerpause\enotes}%
+  \fi\fi\fi\fi
+  \incrementbar{#1}%
+  }
+\newdimen\p@useb@rwidth
+\newdimen\interb@rswidth
+\newdimen\restdispl@ywidth
+\def\longlongrest#1#2{%
+  \p@useb@rwidth=#2\elemskip
+  \interb@rswidth=#2\elemskip
+  \restdispl@ywidth=#2\elemskip
+  \advance\p@useb@rwidth by 8.33\elemskip
+  \advance\restdispl@ywidth by 8.66\elemskip
+  \advance\interb@rswidth by 10\elemskip
+  \znotes\uptext{\lower3\Interligne\hbox{\s@r\vrule\@width\p@useb@rwidth\@height\h@lf\internote\@depth\h@lf\internote\s@r}}\enotes
+  \znotes\uptext{\lower8\Interligne\hbox to\restdispl@ywidth{\hss{\bigtype#1}\hss}}\enotes
+  \addspace\interb@rswidth%
+  \incrementbar{#1}%
+}%
+\def\tacet#1#2{%
+  \p@useb@rwidth=#2\elemskip
+  \interb@rswidth=#2\elemskip
+  \restdispl@ywidth=#2\elemskip
+  \advance\p@useb@rwidth by 8.33\elemskip
+  \advance\restdispl@ywidth by 8.66\elemskip
+  \advance\interb@rswidth by 10\elemskip
+  \znotes\uptext{\lower3\Interligne\hbox{\s@r\vrule\@width\p@useb@rwidth\@height\h@lf\internote\@depth\h@lf\internote\s@r}}\enotes
+  \znotes\uptext{\lower8\Interligne\hbox to\restdispl@ywidth{\hss{\bigtype Tacet}\hss}}\enotes
+  \addspace\interb@rswidth%
+  \incrementbar{#1}%
+}%
+
+\catcode`\@=\catcodeat
+\ifcorrectionmode \def\correction#1#2{#2} \else \def\correction#1#2{#1} \fi
+% % % % % % % % % % % % % % % %
