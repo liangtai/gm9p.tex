@@ -12,7 +12,7 @@
 \staffbotmarg=4\Interligne
 \nobarnumbers
 \startpiece
-\mulooseness=2
+\mulooseness=1
 \systemnumbers
 % bar 1-2 [Trompete I.]
 \znotes\uptext{\raise 25pt\hbox{\bigtype
@@ -122,7 +122,8 @@
 \bar % bar 119 [Trompete I.]
 \NOTes\hqsk\icresc\hlp{_i}\enotes
 \NOtes\zcharnote{M}{\loff\tcresc}\sk\enotes
-\Notes\ds\ccharnote{M}{\f}\roff{\icresc}\isluru0k\cu{_e}\zcharnote{N}{\tcresc}\enotes
+\Notes\ds\ccharnote{M}{\f}\roff{\icresc}\isluru0j\cu{_e}\zcharnote{N}{\tcresc}\enotes
+\znotes\breakslur0l\enotes
 \bar % bar 120 [Trompete I.]
 \notabene{14pt}{Pesante}%
 \ninestyle%
@@ -138,13 +139,16 @@
 %notabene{0pt}{\vbox{\hbox{Wieder}\hbox{zur\"uckhaltend}}}%
 \longrest3%
 \doublebar % bar 126-136 [Trompete I.]
-\notabene{12pt}{Tempo~I. Molto adagio \it(Noch breiter als zu Anfang)}%
+\notabene{0pt}{\vbox{\hbox{Tempo~I. Molto adagio}\hbox{\enskip\it(Noch breiter als zu Anfang)}}}%
 \longrest{11}%
 % bar 137 [Trompete I.]
-\generalmeter{\meterfrac64}\changecontext%
+\generalmeter{\meterfrac64}\changecontext
 \longrest1%
+\generalmeter{\meterfrac44}\changecontext
+\addspace{-\afterruleskip}\zalaligne
 % bar 138 [Trompete I.]
-\generalmeter{\meterfrac44}\changecontext%
+\addspace{-\afterruleskip}%
+\generalmeter{\meterfrac44}\zchangecontext
 \guideexcerptstyle%
 \znotes\ccharnote{n}{\smalltype Hrn.}\enotes
 \NOtes\tinynotesize\Ioctfindown0a\ql j\enotes
@@ -183,16 +187,16 @@
 \guideexcerptstyle%
 \znotes\ccharnote{n}{\smalltype Ob.}\enotes
 \NOtes\tinynotesize\islurd0f\qu f\enotes
-\Notesp\tinynotesize\tslur0e\ibu0e{-3}\qbp0{_e}\enotes
-\notes\tinynotesize\tbbu0\tbu0\qb0{_d}\enotes
+\Notesp\tinynotesize\hqsk\tslur0e\ibu0e{-3}\qbp0{_e}\enotes
+\notes\tinynotesize\hqsk\tbbu0\tbu0\qb0{_d}\enotes
 \NOTes\tinynotesize\hu c\enotes
 \excerptpause1%
 \bar % bar 149 [Trompete I.]
 \znotes\ccharnote{n}{\smalltype Fl.}\enotes
-\NOtes\tinynotesize\loff{\sh c}\islurd0a\isluru1h\zq{=ac}\qu{=e}\enotes
-\Notesp\tinynotesize\loff{\na b}\tslur0M\tslur1g\ibu0d{-3}\zqb0{^M}\zqbp0b\qbp0{^d}\enotes
-\notes\tinynotesize\loff{\na a}\tbbu0\tbu0\zqb0a\qb0{^c}\enotes
-\NOTes\tinynotesize\zq{^M}\hu{=b}\enotes
+\NOtes\tinynotesize\hqsk\loff{\sh c}\islurd0a\isluru1h\zq{=ac}\qu{=e}\enotes
+\Notesp\tinynotesize\hqsk\loff{\na b}\tslur0M\tslur1g\ibu0d{-3}\zqb0{^M}\zqbp0b\qbp0{^d}\enotes
+\notes\tinynotesize\hqsk\loff{\na a}\tbbu0\tbu0\zqb0a\qb0{^c}\enotes
+\NOTes\tinynotesize\hqsk\zq{^M}\hu{=b}\enotes
 \excerptpause1%
 \defaultskipstyle%
 \bar % bar 150 [Trompete I.]
@@ -210,24 +214,25 @@
 \longrest7%
 \znotes\fermataup m\enotes
 \bar % bar 159-161 [Trompete I.]
-\notabene{0pt}{\enskip Adagissimo}%
+\addspace{-\afterruleskip}\zalaligne
+\notabene{0pt}{Adagissimo}%
 \longrest3%
-\bar % bar 162-169 [Trompete I.]
+\xbar % bar 162-169 [Trompete I.]
 \longrest8%
+\generalmeter{\meterfrac32}\changecontext
 % bar 170 [Trompete I.]
-\generalmeter{\meterfrac32}\changecontext%
 \longrest1%
 % bar 171-178 [Trompete I.]
-\generalmeter{\meterfrac44}\changecontext%
+\generalmeter{\meterfrac44}\changecontext
 \longrest8%
 \bar % bar 179-182 [Trompete I.]
 \notabene{0pt}{\"Au\ss erst langsam}%
 \longrest4%
 % bar 183 [Trompete I.]
-\generalmeter{\meterfrac32}\changecontext%
+\generalmeter{\meterfrac32}\changecontext
 \longrest1%
 % bar 184-185 [Trompete I.]
-\generalmeter{\meterfrac44}\changecontext%
+\generalmeter{\meterfrac44}\changecontext
 \longrest1%
 \bar % bar 185 [Trompete I.]
 \addspace{8\elemskip}%
