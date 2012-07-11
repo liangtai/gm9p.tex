@@ -7,8 +7,8 @@
 %setname1{Trompete II.}
 \setclef1\treble
 
-\stafftopmarg=6\Interligne
-\staffbotmarg=6\Interligne
+\stafftopmarg=3\Interligne
+\staffbotmarg=3\Interligne
 \nobarnumbers
 \startpiece
 \mulooseness=0
@@ -40,13 +40,13 @@
 \longrest2%
 \bar % bar 38 [Trompete II.]
 \guideexcerptstyle%
-\znotes\zcharnote{p}{\smalltype I.}\enotes
+\znotes\zcharnote{n}{\smalltype Trp.I.}\enotes
 \NOTes\tinynotesize\hpause\enotes
-\Notes\tinynotesize\ds\ibu0e2\qb0{e^f}\tbu0\qb0{^g}\enotes
+\Notes\tinynotesize\ds\ibu0f4\qb0e\hqsk\qb0{^f}\hqsk\tbu0\qb0{^g}\enotes
 \excerptpause{-4}%
 \bar % bar 39 [Trompete II.]
-\NOtes\tinynotesize\islurd0g\qu{^g}\enotes
-\NOTes\tinynotesize\tslur0h\hu h\enotes
+\NOtes\tinynotesize\islurd0g\qu{^g}\tslur0h\qu h\enotes
+\NOTes\tinynotesize\hpause\enotes
 \excerptpause{-4}%
 \defaultskipstyle%
 \bar % bar 40-41 [Trompete II.]
@@ -70,13 +70,16 @@
 \notes\qs\tbbu0\tbu0\qb0h\enotes
 \NOTesp\zcharnote{L}{\smallppff cresc.}\hup h\enotes
 % bar 46 [Trompete II.]
-\generalmeter{\meterfrac64}\changecontext%
+\generalmeter{\meterfrac64}\changecontext
 \notabene{0pt}{Rit.}%
 \NOTes\ccharnote{M}{\sF}\roff{\icresc}\itied0e\hu e\zcharnote{N}{\tdecresc}\enotes
 \NOTEs\roff{\icresc}\ttie0\wh e\zcharnote{N}{\tcresc}\enotes
+\generalmeter{\meterfrac44}\Changecontext
+\addspace{-\afterruleskip}\zalaligne
 % bar 47-56 [Trompete II.]
-\generalmeter{\meterfrac44}\Changecontext%
-\notabene{4pt}{a tempo}%
+\addspace{-\afterruleskip}%
+\generalmeter{\meterfrac44}\zchangecontext
+\notabene{0pt}{a tempo}%
 \longrest{10}%
 \bar % bar 57-68 [Trompete II.]
 \rehearsalmark{4}{2.4}{0pt}%
@@ -85,57 +88,58 @@
 \rehearsalmark{5}{2.4}{0pt}%
 \longrest7%
 % bar 76 [Trompete II.]
-\generalmeter{\meterfrac34}\changecontext%
+\generalmeter{\meterfrac34}\changecontext
 \longrest1%
 % bar 77-78 [Trompete II.]
-\generalmeter{\meterfrac44}\changecontext%
+\generalmeter{\meterfrac44}\changecontext
 \longrest2%
 % bar 79 [Trompete II.]
-\generalmeter{\meterfrac24}\changecontext%
+\generalmeter{\meterfrac24}\changecontext
 \longrest1%
-\generalmeter{\meterfrac44}\Changecontext%
-\addspace{-\afterruleskip}\zalaligne
-\mulooseness=0
+\generalmeter{\meterfrac44}\Changecontext
+%addspace{-\afterruleskip}\zalaligne
+%mulooseness=0
 % bar 80-81 [Trompete II.]
-\addspace{-\afterruleskip}%
-\generalmeter{\meterfrac44}\zchangecontext%
-\notabene{10pt}{Etwas frischer}%
+%addspace{-\afterruleskip}%
+%generalmeter{\meterfrac44}\zchangecontext
+\notabene{0pt}{Etwas frischer}%
 \longrest2%
 \bar % bar 82 [Trompete II.]
+\znotes\ccharnote{b}{\smalltype Trp.I.}\enotes
 \guideexcerptstyle%
-\NOtes\tinynotesize\qp\itied0h\lsf n\qu h\enotes
+\NOtes\tinynotesize\qp\itied0h\usf l\qu h\enotes
 \Notes\tinynotesize\ttie0\cu h\enotes
-\NOtes\tinynotesize\hqsk\usf m\qu{^g}\enotes
-\Notes\tinynotesize\lpz g\cu{=g}\enotes
+\NOtes\tinynotesize\hqsk\usf k\qu{^g}\enotes
+\Notes\tinynotesize\hqsk\lpz g\cu{=g}\enotes
 \excerptpause{-3}%
 \bar % bar 83 [Trompete II.]
 \Notes\tinynotesize\ibu0h{-2}\qb0h\enotes
 \notes\tinynotesize\qs\hqsk\tbbu0\tbu0\qb0{^g}\enotes
 \NOtes\tinynotesize\hqsk\itied0g\qu{=g}\enotes
-\Notesp\tinynotesize\uptrio s20\ttie0\qu g\usf k\qu c\usf m\qu g\enotes
+\Notesp\tinynotesize\uptrio q20\ttie0\qu g\usf g\qu c\usf k\qu g\enotes
 \excerptpause{-3}%
 \defaultskipstyle%
 \bar % bar 84 [Trompete II.]
 \znotes\lower3\Interligne\hpause\enotes
-\NOTes\tinynotesize\isluru0h\usf n\hu h\enotes
+\NOTes\tinynotesize\isluru0h\usf l\hu h\enotes
 \znotes\lower5\Interligne\qp\enotes
 \NOtes\tinynotesize\tslur0c\qu c\enotes
-\Notesp\ccharnote{K}{\f}\ibu0c4\qbp0c\enotes
+\Notesp\ccharnote{K}{\f}\ibu0d5\qbp0c\enotes
 \notes\tbbu0\tbu0\qb0f\enotes
 \bar % bar 85 [Trompete II.]
 \Notes\cu h\ds\enotes
 \NOTes\hpause\enotes
 \NOtes\qp\enotes
 \bar % bar 86-90 [Trompete II.]
-\notabene{0pt}{\kern-\afterruleskip\hbox{Flie\ss end}}%
+\notabene{0pt}{\hbox{Flie\ss end}}%
 \longrest5%
 \bar % bar 91 [Trompete II.]
-\notabene{0pt}{\kern-\afterruleskip\hbox{Rit.}}%
+\notabene{0pt}{\hbox{Rit.}}%
 \longrest1%
 \bar % bar 92 [Trompete II.]
-\notabene{8pt}{a tempo \it(Allegro moderato)}%
-\NOtes\qp\enotes
-\NOTesp\ccharnote{L}{\ff}\zcharnote{L}{\quad\smallppff dim.}\islurd0e\hup{_e}\enotes
+\notabene{0pt}{a tempo \it(Allegro moderato)}%
+\NOtes\qp\ccharnote{L}{\ff}\islurd0e\hup{_e}\enotes
+\NOTes\zcharnote{L}{\smallppff dim.}\sk\enotes
 \bar % bar 93 [Trompete II.]
 \NOTes\hqsk\ccharnote{L}{\sF}\roff{\icresc}\tslur0e\itied0e\hu{=e}\zcharnote{M}{\tdecresc}\enotes
 \Notes\ttie0\cu e\ds\enotes
@@ -155,18 +159,18 @@
 \bar % bar 101 [Trompete II.]
 \ninestyle%
 \NOtes\uptrio q{1.3}{-3}\qp\enotes
-\Notes\lpz c\cu c\triolet a\ibu0g2\lpz f\qb0f\hqsk\lpz h\qb0{_h}\hqsk\tbu0\lpz i\qb0{=i}\enotes
+\Notes\lpz c\cu c\triolet a\ibu0g4\lpz f\qb0f\hqsk\lpz h\qb0{_h}\hqsk\tbu0\lpz i\qb0{=i}\enotes
 \defaultskipstyle%
 \Notes\upz m\cl m\ds\enotes
 \NOtes\qp\enotes
 \bar % bar 102-103 [Trompete II.]
-\notabene{12pt}{Allegro}%
+\notabene{0pt}{Allegro}%
 \longrest2%
 \bar % bar 104 [Trompete II.]
 \Notes\multnoteskip{.667}\ccharnote{L}{\ff}\ibu0f0\qb0f\butext0\qb0c\tbu0\qb0f%
 	\hqsk\ibu0g0\qb0{=g}\hqsk\butext0\qb0{=d}\tbu0\qb0g%
 	\hqsk\ibu0h0\qb0{=h}\butext0\qb0f\tbu0\qb0h%
-	\hqsk0\ibu0i0\qb0{_i}\butext0\qb0g\tbu0\qb0i\enotes
+	\hqsk\ibu0i0\qb0{_i}\butext0\qb0g\tbu0\qb0i\enotes
 \bar % bar 105 [Trompete II.]
 \NOtes\itieu0k\ql k\enotes
 \Notes\multnoteskip{.667}\triolet m\ibl0k{-3}\ttie0\qb0{kj}\hqsk\tbl0\qb0{_i}%
@@ -179,14 +183,14 @@
 \NOtes\qp\enotes
 \NOTes\hpause\enotes
 \doublebar % bar 108-109 [Trompete II.]
-\znotes\lcharnote{r}{\smalltype (in B)}\enotes
+\znotes\lcharnote{n}{\normtype\bf (in B)}\enotes
 \longrest2%
 \bar % bar 110-114 [Trompete II.]
-\notabene{12pt}{Tempo~I. subito \it(aber nicht schleppend)}%
+\notabene{2pt}{Tempo~I. subito \it(aber nicht schleppend)}%
 %notabene{5pt}{\kern-\afterruleskip\vbox{\hbox{Tempo~I. subito}\hbox{\it(aber nicht schleppend)}}}%
 \longrest5%
-\notabene{0pt}{\sansseriffifteen in B}%
-\bar % bar 115 [Trompete II.]
+\znotes\zcharnote{N}{\sansseriffifteen in B}\enotes
+\xbar % bar 115 [Trompete II.]
 \NOTes\hpause\enotes
 \Notes\ccharnote{L}{\f}\cu{_d}\ds\cu{=f}\ds\enotes
 \bar % bar 116 [Trompete II.]
@@ -201,9 +205,9 @@
 \NOTEs\ccharnote{M}{\p}\roff{\icresc}\usf j\wh f\zcharnote{N}{\tdecresc}\enotes
 \bar % bar 119-124 [Trompete II.]
 \longrest6%
-\znotes\lcharnote{r}{\smalltype (in F)\quad}\enotes
+\znotes\lcharnote{n}{\normtype\bf (in F)\quad}\enotes
 \bar % bar 125-141 [Trompete II.]
-\rehearsalmark{7}{2.4}{0pt}%
+\rehearsalmark{7}{2.0}{0pt}%
 \longrest{17}%
 \doublebar % bar 142-147 [Trompete II.]
 \longrest6%
@@ -214,34 +218,33 @@
 \rehearsalmark{8}{2.4}{0pt}%
 \longrest8%
 \doublebar % bar 160-163 [Trompete II.]
-\addspace{-\afterruleskip}\zalaligne
-\mulooseness=0
 \longrest4%
-\notabene{0pt}{\sansseriffifteen in F}%
 \bar % bar 164 [Trompete II.]
 \guideexcerptstyle%
-\znotes\zcharnote{L}{\smalltype Horn.I.}\enotes
-\NOtes\tinynotesize\qp\enotes
-\Notes\tinynotesize\ds\Ioctfindown0a\isluru0k\cu g\hqsk\ibl0h0\qb0{_l}\tslur0j\qb0j\isluru0i\qb0g\tbl0\qb0k\enotes
-\notabene{12pt}{\kern-2\elemskip\hbox{Allm\"ahlich flie\ss ender}}%
-\excerptpause2%
+\znotes\zcharnote{L}{\kern-\afterruleskip{\smalltype Hrn.I.}}\enotes
+\NOtes\tinynotesize\lower1\Interligne\qp\enotes
+\Notes\tinynotesize\lower1\Interligne\ds\islurd0N\cu N\hqsk\ibu0e0\qb0{_e}\tslur0d\qb0c\islurd0N\qb0N\tbu0\qb0d\enotes
+\notabene{2pt}{\kern-2\elemskip\hbox{Allm\"ahlich flie\ss ender}}%
+\excerptpause1%
 \xbar % bar 165 [Trompete II.]
-\NOtesp\tinynotesize\tslur0j\qlp j\enotes
-\Notes\tinynotesize\isluru0k\cu g\hqsk\ibl0h0\qb0{_l}\tslur0k\qb0j\isluru0i\qb0g\tbl0\qb0k\enotes
-\excerptpause2%
+\NOtesp\tinynotesize\tslur0c\qup c\enotes
+\Notes\tinynotesize\islurd0N\cu N\hqsk\ibu0e0\qb0{_e}\tslur0c\qb0c\islurd0N\qb0N\tbu0\qb0d\enotes
+\excerptpause1%
 \bar % bar 166 [Trompete II.]
-\NOTes\tinynotesize\tslur0j\hl j\enotes
-\NOtes\tinynotesize\qp\enotes
-\Notes\tinynotesize\ds\isluru0k\usf l\cl k\enotes
-\excerptpause2%
+\NOTes\tinynotesize\tslur0c\hu c\enotes
+\NOtes\tinynotesize\lower1\Interligne\qp\enotes
+\Notes\tinynotesize\lower1\Interligne\ds\islurd0d\usf h\cu d\enotes
+\excerptpause1%
 \bar % bar 167 [Trompete II.]
-\NOTes\tinynotesize\Toctfin0\tslur0j\hl j\hpause\enotes
-\excerptpause2%
+\NOTes\tinynotesize\tslur0c\hu c\lower1\Interligne\hpause\enotes
+\excerptpause1%
 \defaultskipstyle%
 \bar % bar 168 [Trompete II.]
 \ninestyle%
-\NOtes\ccharnote{p}{\smalltype mit D\"ampfer}\triolet k\qp\enotes
-\notes\ccharnote{J}{\p}\ibbu0a0\lpz b\qb0{_b}\tbbu0\tbu0\lpz b\qb0b\enotes
+\znotes\zcharnote{p}{\normtype mit D\"ampfer}\enotes
+\NOtes\triolet k\qp\enotes
+\znotes\lcharnote{K}{\vtop{\hbox{\sansseriffifteen in F\enskip}\hbox{\smallppff{}}}}\enotes
+\notes\ccharnote{K}{\p}\ibbu0a0\lpz b\qb0{_b}\tbbu0\tbu0\lpz b\qb0b\enotes
 \Notes\ibu0b0\lpz b\qb0b\butext0\lpz M\qb0M\tbu0\lpz b\qb0b%
 	\ibu0c0\lpz c\qb0c\butext0\lpz b\qb0b\tbu0\lpz c\qb0c%
 	\ibu0d0\lpz d\qb0d\butext0\lpz c\qb0c\tbu0\lpz d\qb0d\enotes
@@ -249,27 +252,32 @@
 \bar % bar 169 [Trompete II.]
 \Notes\ibu0h3\qb0f\enotes
 \notes\qs\hqsk\tbbu0\tbu0\qb0{_j}\enotes
-\NOTesp\ccharnote{M}{\sF}\roff{\zcharnote{N}{\decrescendo{.6\noteskip}}}\hlp j\enotes
+%NOTesp\ccharnote{M}{\sF}\roff{\zcharnote{N}{\decrescendo{.6\noteskip}}}\hlp j\enotes
+\NOTes\ccharnote{M}{\sF}\roff\icresc\hlp j\enotes
+\NOtes\zcharnote{N}{\tdecresc}\sk\enotes
 \bar % bar 170 [Trompete II.]
 \ninestyle%
 \Notes\triolet o\ds\ds\enotes
 \notes\ccharnote{L}{\p}\ibbu0d0\lpz d\qb0d\tbbu0\tbu0\lpz d\qb0d\enotes
 \Notes\ibu0d{-3}\lpz d\qb0d\butext0\lpz c\qb0c\hqsk\tbu0\lpz b\qb0{_b}%
 	\ibu0c0\lpz c\qb0c\butext0\lpz b\qb0b\tbu0\lpz c\qb0c%
-	\hqsk\ibu0b0\qb0{_b}\butext0\qb0M\tbu0\qb0b\enotes
+	\ibu0b0\qb0b\butext0\qb0M\tbu0\qb0b\enotes
 \defaultskipstyle%
 \bar % bar 171 [Trompete II.]
 \longrest1%
 \bar % bar 172 [Trompete II.]
-\NOTes\ccharnote{M}{\p}\hu{g_h}\lcharnote{M}{\smallppff molto cresc.}\enotes
-\bar % bar 173 [Trompete II.]
+\NOtesp\ccharnote{M}{\p}\hu g\enotes
+\notes\zcharnote{M}{\smallppff molto cresc.}\sk\enotes
+\NOTes\hu{_h}\enotes
+\xbar % bar 173 [Trompete II.]
 \NOTes\hqsk\hl{_i=i}\enotes
 \bar % 174 [Trompete II.]
-\rehearsalmark{9}{2.4}{0pt}%
-\notabene{14pt}{ \vbox{\hbox{Mit Wut}\hbox{Allegro risoluto \it(Nicht zu schnell)}}}%
+\rehearsalmark{9}{3.0}{4pt}%
+\notabene{10pt}{\enskip\vbox{\hbox{Mit Wut}\hbox{Allegro risoluto \it(Nicht zu schnell)}}}%
 \longrest1%
 \bar % 175 [Trompete II.]
-\Notesp\ccharnote{L}{\ff}\ccharnote{o}{\smalltype offen}\ibu0d0\qbp0d\enotes
+\znotes\ccharnote{n}{\normtype offen}\enotes
+\Notesp\ccharnote{L}{\ff}\ibu0d0\qbp0d\enotes
 \notes\multnoteskip{.8}\nbbbu0\qb0d\tbbbu0\tbbu0\tbu0\qb0d\enotes
 \Notesp\ibu0d0\qbp0d\enotes
 \notes\multnoteskip{.8}\nbbbu0\qb0d\tbbbu0\tbbu0\tbu0\qb0d\enotes
@@ -311,8 +319,23 @@
 \NOTEs\hqsk\ccharnote{M}{\ff}\roff{\zcharnote{N}{\decrescendo{.75\noteskip}}}\itieu0i\wh{=i}\enotes
 \bar % bar 183 [Trompete II.]
 \NOTEs\ccharnote{M}{\p}\ttie0\wh i\enotes
-\bar % bar 184-189 [Trompete II.]
-\longrest6%
+\bar % bar 184-187 [Trompete II.]
+\longrest4%
+\znotes\lcharnote{M}{\bigtype V.S.}\enotes
+\bar % bar 188 [Trompete II.]
+\addspace{-\afterruleskip}\zalaligne
+\guideexcerptstyle%
+\znotes\zcharnote{N}{\smalltype Trp.I.}\enotes
+\NOtes\tinynotesize\isluru0h\usf m\qu h\enotes
+\NOtesp\tinynotesize\tslur0k\usf l\qlp k\enotes
+\NOtes\tinynotesize\isluru0j\usf k\ql{^j}\enotes
+\Notes\tinynotesize\tslur0h\cu{^f}\enotes
+\excerptpause{-3}%
+\bar % bar 189 [Trompete II.]
+\NOTesp\tinynotesize\hlp i\enotes
+\Notes\tinynotesize\ibu0h{-5}\islurd0h\busf0\qb0h\tbu0\tslur0c\lpz d\qb0d\enotes
+\excerptpause{-3}%
+\defaultskipstyle%
 \bar % bar 190 [Trompete II.]
 \NOtes\ccharnote{I}{\p}\itied0a\usf i\qu a\enotes
 \Notes\ttie0\cu a\ds\enotes
@@ -324,7 +347,7 @@
 \Notes\multnoteskip{.667}\ibu0f{-2}\ttie0\qb0f\butext0\qb0e\hqsk\tbu0\qb0{_e}%
 	\ibu0f{-2}\qb0f\hqsk\butext0\qb0{=e}\hqsk\tbu0\qb0{_e}\enotes
 \Notesp\ibu0f{-2}\qbp0f\enotes
-\notes\tbbu0\tbu0\qb0{=e}\enotes
+\notes\hqsk\tbbu0\tbu0\qb0{=e}\enotes
 \bar % bar 194 [Trompete II.]
 \Notes\multnoteskip{.667}\ibu0d{-2}\qb0d\hqsk\butext0\qb0{^c}\hqsk\tbu0\qb0{=c}\enotes
 \Notesp\ibu0d{-2}\qbp0d\enotes
@@ -338,29 +361,30 @@
 \Notes\multnoteskip{.667}\ccharnote{M}{\ff}\ibu0f0\qb0f\butext0\qb0c\tbu0\qb0f%
 	\ibu0j0\qb0j\butext0\qb0f\tbu0\qb0j\enotes
 \Notesp\hqsk\ibl0l{-4}\qbp0{_l}\enotes
-\notes\tbbl0\tbl0\qb0{_i}\enotes
+\notes\hqsk\tbbl0\tbl0\qb0{_i}\enotes
 \bar % bar 199 [Trompete II.]
 \NOtes\hqsk\ql{_i}\enotes
-\Notes\multnoteskip{.667}\ibu0h0\qb0{_h}\butext0\qb0d\tbu0\qb0h\enotes
+\Notes\hqsk\multnoteskip{.667}\ibu0h0\qb0{_h}\butext0\qb0d\tbu0\qb0h\enotes
 \NOtes\ql i\enotes
 \Notes\multnoteskip{.667}\ibu0h0\qb0h\butext0\qb0d\tbu0\qb0h\enotes
 \bar % bar 200 [Trompete II.]
 \NOTEs\islurd0f\wh f\enotes
 \bar % bar 201 [Trompete II.]
-\NOTesp\hqsk\ccharnote{M}{\sF}\roff{\zcharnote{N}{\decrescendo{.7\noteskip}}}\tslur0h\hup{=h}\enotes
+\NOTes\hqsk\ccharnote{M}{\sF}\roff{\icresc}\tslur0h\hup{=h}\enotes
+\NOtes\zcharnote{N}{\enskip\tdecresc}\sk\enotes
 \NOtes\qp\enotes
 \doublebar % bar 202-210 [Trompete II.]
 \rehearsalmark{11}{3.2}{0pt}%
 \longrest9%
 \doublebar % bar 211-220 [Trompete II.]
-\notabene{17pt}{Leidenschaftlich}%
-\longrest{10}%
+\notabene{0pt}{\vbox{\hbox{Leiden-}\hbox{schaftlich}}}%
+\longlongrest{10}0%
 \bar % bar 221-231 [Trompete II.]
-\rehearsalmark{12}{3.0}{0pt}%
+\rehearsalmark{12}{2.6}{0pt}%
 \longrest{11}%
 \bar % bar 232 [Trompete II.]
 \guideexcerptninestyle%
-\znotes\zcharnote{q}{\smalltype I.}\enotes
+\znotes\zcharnote{q}{\smalltype Trp.I.}\enotes
 \NOtes\tinynotesize\uptrio p1{-2}\qu f\enotes
 \Notes\tinynotesize\cu{_e}\enotes
 \guideexcerptstyle%%
@@ -382,7 +406,7 @@
 \doublebar % bar 234-235 [Trompete II.]
 \notabene{6pt}{\vbox{\hbox{Pl\"otzlich langsamer}\hbox{\it(Das Tempo so weit m\"a\ss igen, als n\"otig)}}}%
 \longrest2%
-\bar % bar 236 [Trompete II.]
+\xbar % bar 236 [Trompete II.]
 \ninestyle%
 \NOtes\hqsk\ccharnote{I}{\ff}\zcharnote{k}{\quad\eightit3}\islurd0c\usf i\qu{^c}\enotes
 \Notes\tslur0b\cu{^b}\enotes
@@ -391,7 +415,7 @@
 	\ibu0c{-2}\lsf c\qb0c\butext0\lsf b\qb0b\hqsk\tbu0\lsf b\qb0{=b}\enotes
 \defaultskipstyle%
 \NOtes\lsf a\qu a\enotes
-\bar % bar 237-241 [Trompete II.]
+\xbar % bar 237-241 [Trompete II.]
 %notabene{12pt}{Sich m\"a\ss igend}%
 \longrest5%
 %bar % bar 239 [Trompete II.]
@@ -419,25 +443,25 @@
 %notabene{8pt}{Etwas fle\ss ender}%
 \longrest3%
 \bar % bar 282-284 [Trompete II.]
-\notabene{0pt}{\kern-\afterruleskip\vbox{\hbox{Etwas}\hbox{ dr\"angend}}}%
+\notabene{0pt}{\vbox{\hbox{Etwas}\hbox{ dr\"angend}}}%
 %notabene{8pt}{\textleader{27}{Etwas dr\"angend}}%
 \longrest3%
 \doublebar % bar 285-292 [Trompete II.]
-\notabene{19pt}{Bewegter \it(quasi Allegro)}%
-\longrest8%
+\notabene{0pt}{\vbox{\hbox{Bewegter}\hbox{\it(quasi Allegro)}}}%
+\longlongrest81%
 \bar % bar 293 [Trompete II.]
-\rehearsalmark{14}{3.0}{0pt}%
+\rehearsalmark{14}{2.0}{0pt}%
 \longrest1%
 \bar % bar 294 [Trompete II.]
 \guideexcerptstyle%
-\znotes\zcharnote{M}{\smalltype I.}\enotes
+\znotes\zcharnote{M}{\smalltype Trp.I.}\enotes
 \NOTes\tinynotesize\hpause\itieu0j\hl{^j}\enotes
 \excerptpause{-3}%
 \bar % bar 295 [Trompete II.]
 \NOtes\tinynotesize\ttie0\ql j\enotes
 \NOTes\tinynotesize\hl{^j}\enotes
 \Notesp\tinynotesize\ibu0i{-2}\qbp0i\enotes
-\notes\tinynotesize\tbbu0\tbu0\qb0{^h}\enotes
+\notes\tinynotesize\hqsk\tbbu0\tbu0\qb0{^h}\enotes
 \excerptpause{-3}%
 \bar % bar 296 [Trompete II.]
 \NOtes\tinynotesize\isluru0j\ql{^j}\enotes
@@ -447,9 +471,9 @@
 \bar % bar 297 [Trompete II.]
 \NOTes\tinynotesize\tslur0i\isluru0i\hl i\enotes
 \Notesp\tinynotesize\ibl0k{-5}\tslur0l\qbp0{^k}\enotes
-\notes\tinynotesize\tbbl0\qb0{^j}\enotes
+\notes\tinynotesize\hqsk\tbbl0\qb0{^j}\enotes
 \Notesp\tinynotesize\qbp0i\enotes
-\notes\tinynotesize\tbbl0\tbl0\qb0{^h}\enotes
+\notes\tinynotesize\hqsk\tbbl0\tbl0\qb0{^h}\enotes
 \excerptpause{-3}%
 \bar % bar 298 [Trompete II.]
 \NOTes\tinynotesize\usf k\hu{^g}\hpause\enotes
@@ -458,9 +482,15 @@
 \bar % bar 299-302 [Trompete II.]
 \longrest4%
 \bar % bar 303 [Trompete II.]
-\notabene{0pt}{\kern-\afterruleskip\vbox{\hbox{Pesan-}\hbox{ te\quad -}}}%
-%notabene{12pt}{\kern-\afterruleskip\textleader{18}{Pesante}}%
-\longrest1%
+%notabene{0pt}{\kern-\afterruleskip\vbox{\hbox{Pesan-}\hbox{ te\quad -}}}%
+\notabene{4pt}{\textleader{11}{Pesante -}}%
+\guideexcerptstyle%
+\znotes\zcharnote{N}{\smalltype Trp.I.}\enotes
+\NOTes\tinynotesize\hpause\enotes
+\NOtes\tinynotesize\qp\enotes
+\Notes\tinynotesize\ibu0g8\qb0{_e}\butext0\qb0g\tbu0\qb0j\enotes
+\excerptpause{-4}%
+\defaultskipstyle%
 \bar % bar 304 [Trompete II.]
 \Notes\lcharnote{G}{\sF}\hqsk\multnoteskip{.667}\zcharnote{J}{\smallppff veloce}\ibu0c{-2}\qb0{_c}\hqsk\butext0\qb0{_b}\tbu0\qb0a\enotes
 \Notes\cu b\ds\enotes
@@ -486,34 +516,34 @@
 \notabene{8pt}{\hbox{a tempo}}%
 \NOTes\hqsk\tslur0l\itieu0k\hl{^k}\enotes
 \Notesp\ibl0k{-3}\ttie0\qbp0k\enotes
-\notes\tbbl0\qb0{^j}\enotes
+\notes\hqsk\tbbl0\qb0{^j}\enotes
 \Notesp\qbp0i\enotes
-\notes\tbbl0\tbl0\qb0{^h}\enotes
+\notes\hqsk\tbbl0\tbl0\qb0{^h}\enotes
 \bar % bar 311 [Trompete II.]
 \Notesp\hqsk\ibl0k{-3}\qbp0{^k}\enotes
-\notes\tbbl0\qb0{^j}\enotes
+\notes\hqsk\tbbl0\qb0{^j}\enotes
 \Notesp\qbp0i\enotes
-\notes\tbbl0\tbl0\qb0{^h}\enotes
+\notes\hqsk\tbbl0\tbl0\qb0{^h}\enotes
 \Notes\hqsk\ibu0g{-2}\qbp0{^g}\enotes
-\notes\tbbu0\qb0{^f}\enotes
+\notes\hqsk\tbbu0\qb0{^f}\enotes
 \Notesp\hqsk\qbp0{^e}\enotes
-\notes\tbbu0\tbu0\qb0{^d}\enotes
+\notes\hqsk\tbbu0\tbu0\qb0{^d}\enotes
 \bar % bar 312 [Trompete II.]
-\notabene{12pt}{\textleader{40}{Stringendo}}%
+\notabene{8pt}{\textleader{40}{Stringendo}}%
 \Notes\hqsk\ibu0g{-2}\qbp0{^g}\enotes
-\notes\tbbu0\qb0{^f}\enotes
+\notes\hqsk\tbbu0\qb0{^f}\enotes
 \Notesp\hqsk\qbp0{^e}\enotes
-\notes\tbbu0\tbu0\qb0{^d}\enotes
+\notes\hqsk\tbbu0\tbu0\qb0{^d}\enotes
 \NOTes\hqsk\itied0d\hu{=d}\enotes
 \bar % bar 313 [Trompete II.]
 \Notes\multnoteskip{.667}\ttie0\ibu0d{-2}\qb0d\hqsk\butext0\qb0{^c}\tbu0\qb0b%
 	\ibu0b{-2}\qb0a\hqsk\butext0\qb0{=N}\hqsk\tbu0\qb0{=M}\enotes
 \NOTes\hpause\enotes
 \bar % bar 314-315 [Trompete II.]
-\notabene{12pt}{-}%
+%notabene{8pt}{-}%
 \longrest2%
 \bar % bar 316-318 [Trompete II.]
-\rehearsalmark{15}{3.3}{0pt}%
+\rehearsalmark{15}{4.0}{0pt}%
 \notabene{12pt}{ Einhaltend}%
 \longrest3%
 \bar % bar 319-320 [Trompete II.]
@@ -522,10 +552,10 @@
 \bar % bar 321-322 [Trompete II.]
 \notabene{12pt}{Gehalten}%
 \longrest2%
-\znotes\lcharnote{o}{\smalltype mit D\"ampfer}\enotes
 \bar % bar 323 [Trompete II.]
 \ninestyle%
 \NOtes\uptrio p{1.4}0\qp\enotes
+\znotes\zcharnote{q}{\normtype mit D\"ampfer}\enotes
 \notes\ccharnote{J}{\f}\ibbu0b0\qb0b\tbbu0\tbu0\qb0b\enotes
 \defaultskipstyle%
 \NOtes\qu b\qp\enotes
@@ -542,10 +572,10 @@
 \notes\ccharnote{I}{\ff}\ibbu0b0\qb0{^a}\tbbu0\tbu0\qb0a\enotes
 \defaultskipstyle%
 \NOtes\itied0a\qu a\enotes
-\Notes\multnoteskip{.667}\ibu0b1\ttie0\qb0a\butext0\qb0a\hqsk\tbu0\qb0{^c}\enotes
+\Notes\multnoteskip{.667}\ibu0b2\ttie0\qb0a\butext0\qb0a\hqsk\tbu0\qb0{^c}\enotes
 \Notesp\ibu0c0\qbp0c\enotes
 \notes\tbbu0\tbu0\qb0c\enotes
-\bar % bar 328 [Trompete II.]
+\xbar % bar 328 [Trompete II.]
 \NOTesp\hqsk\zcharnote{K}{\decrescendo{1\noteskip}}\usf k\hup{^a}\enotes
 \NOtes\qp\enotes
 \bar % bar 329 [Trompete II.]
@@ -563,21 +593,21 @@
 \longrest4%
 \bar % bar 335 [Trompete II.]
 \NOTes\hpause\enotes
-\znotes\lcharnote{o}{\smalltype immer mit D\"ampfer\quad}\enotes
 \ninestyle%
 \Notes\uptrio p{2.6}0\ds\ds\enotes
+\znotes\ccharnote{q}{\normtype immer mit D\"ampfer}\enotes
 \notes\ccharnote{K}{\ff}\ibbu0c0\lpz c\qb0{^c}\tbbu0\tbu0\lpz c\qb0c\enotes
-\Notes\ibu0c1\lpz c\qb0c\butext0\lpz c\qb0c\tbu0\lpz e\qb0e\enotes
+\Notes\ibu0c4\lpz c\qb0c\butext0\lpz c\qb0c\tbu0\lpz e\qb0e\enotes
 \defaultskipstyle%
 \bar % bar 336 [Trompete II.]
-\Notes\ibu0f{-5}\qb0f\enotes
+\Notes\ibu0f{-3}\qb0f\enotes
 \notes\lower2\Interligne\qs\hqsk\tbbu0\tbu0\qb0{^c}\enotes
 \NOTes\hu c\enotes
 \NOtes\qp\enotes
 \doublebar % bar 337-346 [Trompete II.]
 \longrest{10}%
 \doublebar % bar 347-350 [Trompete II.]
-\notabene{5pt}{\vbox{\hbox{Wie von}\hbox{ Anfang}}}%
+\notabene{0pt}{\vbox{\hbox{Wie von}\hbox{ Anfang}}}%
 \longrest4%
 \notabene{0pt}{Anwachsend}%
 \bar % bar 351-355 [Trompete II.]
@@ -585,13 +615,13 @@
 \bar % bar 355 [Trompete II.]
 \guideexcerptstyle%
 \znotes\zcharnote{K}{\smalltype Hrn.I.,III.}\enotes
-\NOtes\tinynotesize\qp\islurd0c\usf i\qu{^c}\enotes
+\NOtes\tinynotesize\qp\islurd0c\usf g\qu{^c}\enotes
 \NOTes\tinynotesize\tslur0b\hu b\enotes
 \excerptpause1%
 \defaultskipstyle%
 \bar % bar 356 [Trompete II.]
 \rehearsalmark{16}{3.0}{4pt}%
-\NOTes\zcharnote{o}{\quad\smalltype(ohne D\"ampfer)}\hpause\enotes
+\NOTes\zcharnote{o}{\quad\normtype(ohne D\"ampfer)}\hpause\enotes
 \NOtes\qp\ccharnote{K}{\fp}\roff{\icresc}\islurd0c\qu{=c}\enotes
 \xbar % bar 357 [Trompete II.]
 \NOtes\hqsk\tslur0c\itied0c\qu{^c}\zcharnote{L}{\tcresc}\enotes
@@ -630,6 +660,96 @@
 \NOtes\qp\enotes
 \Notes\ibu0e0\itied0e\lsf e\qb0e\enotes
 \notes\tbbu0\tbu0\ttie0\qb0e\qs\enotes
-\bar % bar 365-454 [Trompete II.]
-\tacet{90}2%
+\bar % bar 365-371 [Trompete II.]
+\longrest7%
+\doublebar % bar 372-375 [Trompete II.]
+\longrest4%
+\doublebar % bar 376-390 [Trompete II.]
+%notabene{12pt}{\vbox{\hbox{Pl\"otzlich bedeutend langsamer}\hbox{ {\it(Lento)} und leise}}}%
+\notabene{0pt}{\smallppff Misterioso}%
+\longrest{15}%
+\bar % bar 391-397 [Trompete II.]
+%notabene{3pt}{\vbox{\hbox{Nicht mehr}\hbox{ so langsam}}}%
+\longrest7%
+\doublebar % bar 398-399 [Trompete II.]
+%notabene{6pt}{Etwas belebter}%
+\longrest2%
+\bar % bar 400-405 [Trompete II.]
+%notabene{0pt}{gehalten}%
+\longrest6%
+\bar % bar 406-415 [Trompete II.]
+\notabene{3pt}{\vbox{\hbox{Schon ganz}\hbox{ langsam}}}%
+\longrest{10}%
+\bar % bar 416-422 [Trompete II.]
+%notabene{3pt}{Sehr Z\"ogernd}%
+\longrest7%
+\bar % bar 423-433 [Trompete II.]
+%notabene{3pt}{Schwebend}%
+\longrest{11}%
+\bar % bar 434-439 [Trompete II.]
+\notabene{3pt}{\vbox{\hbox{Wieder a tempo}\hbox{ \it(aber viel langsamer als zu Anfang\/)}}}%
+\longrest6%
+\bar % bar 440 [Trompete II.]
+\guideexcerptstyle%
+\znotes\ccharnote{N}{\smalltype Hrn. II. IV.}\enotes
+\NOTes\tinynotesize\hpause\enotes
+\NOtes\tinynotesize\qp\Ioctfindown0L\islurd0e\isluru1g\zq e\qu{^g}\enotes
+\excerptpause1%
+\bar % bar 441 [Trompete II.]
+\NOTes\tinynotesize\hqsk\tslur0d\tslur1f\zh d\hu{^f}\enotes
+\NOtes\tinynotesize\qp\islurd0e\isluru1g\zq e\qu{^g}\enotes
+\excerptpause1%
+\bar % bar 442 [Trompete II.]
+\NOTesp\tinynotesize\hqsk\tslur0d\tslur1f\zhp d\hup{^f}\enotes
+\NOtes\tinynotesize\qp\enotes
+\excerptpause1%
+\generalmeter{\meterfrac64}\changecontext
+% bar 443 [Trompete II.]
+\addspace{-\afterruleskip}\zalaligne
+\addspace{-\afterruleskip}%
+\generalmeter{\meterfrac64}\zchangecontext
+\addspace{-\afterruleskip}%
+\NOtes\tinynotesize\qp\enotes
+\NOTesp\tinynotesize\usf l\itied0g\itieu1i\zhp{^g}\hup i\enotes
+\NOTes\tinynotesize\ttie0\islurd0g\ttie1\isluru1k\zh g\hu i\enotes
+\excerptpause1%
+% bar 444 [Trompete II.]
+\generalmeter{\meterfrac44}\changecontext
+\addspace{-\afterruleskip}%
+\NOTes\tinynotesize\tslur0c\tslur1i\zh{^c}\hu e\enotes
+\NOtes\tinynotesize\qp\islurd0g\isluru1i\zq{^g}\qu i\enotes
+\excerptpause1%
+\bar % bar 445 [Trompete II.]
+\NOTes\tinynotesize\tslur0c\tslur1e\zh{^c}\hu e\enotes
+\NOtes\tinynotesize\qp\islurd0g\isluru1i\zq{^g}\qu i\enotes
+\excerptpause1%
+\bar % bar 446 [Trompete II.]
+\NOTEs\tinynotesize\tslur0c\itied0c\tslur1e\itieu1e\zw{^c}\wh e\enotes
+\excerptpause1%
+\bar % bar 447 [Trompete II.]
+\NOtes\tinynotesize\ttie0\ttie1\zq c\qu e\qp\qp\islurd0g\isluru1i\zq{^g}\qu i\enotes
+\excerptpause1%
+\bar % bar 448 [Trompete II.]
+\NOTEs\tinynotesize\hqsk\tslur0c\itied0c\tslur1e\itieu1e\zw{^c}\wh e\enotes
+\excerptpause1%
+\bar % bar 449 [Trompete II.]
+\NOTEs\tinynotesize\ttie0\itied0c\ttie1\itieu1e\zw c\wh e\enotes
+\excerptpause1%
+\bar % bar 450 [Trompete II.]
+\NOTEs\tinynotesize\ttie0\itied0c\ttie1\itieu1e\zw c\wh e\enotes
+\excerptpause1%
+\bar % bar 451 [Trompete II.]
+\NOTEs\tinynotesize\ttie0\itied0c\ttie1\itieu1e\zw c\wh e\enotes
+\excerptpause1%
+\bar % bar 452 [Trompete II.]
+\NOTEs\tinynotesize\ttie0\itied0c\ttie1\itieu1e\zw c\wh e\enotes
+\excerptpause1%
+\bar % bar 453 [Trompete II.]
+\NOtes\tinynotesize\Toctfin0\ttie0\ttie1\zq c\qu e\qp\enotes
+\NOTes\tinynotesize\hpause\enotes
+\excerptpause1%
+\bar % bar 454 [Trompete II.]
+\defaultskipstyle%
+\addspace{8\elemskip}%
+\def\atnextbar{\znotes\centerbar{\Fermataup m}\centerpause\enotes}%
 \Endpiece
