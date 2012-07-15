@@ -1,12 +1,5 @@
 % format tex
 \input musixtex
-\newif\ifcorrectionmode
-
-% This part musics can contain some correction with brackets,
-%   e.g. [\ff], [\crescendo{}] etc.
-% If you wont these correction, replace the line after here
-%   as \correctionmodetrue instead of \correctionmodefalse.
-\correctionmodefalse
 
 % general style [A4:default]
 \musicparskip\parindent12mm
@@ -92,6 +85,7 @@
 \def\textleader#1#2{\hbox to#1\elemskip{{#2}\leaders\hbox to2em{-\hss}\hfill\llap{-\enskip}}}%
 \def\gest#1{\zcharnote{#1}{\vrule width2pt height.4pt depth.4pt\vrule height2.2pt depth2.2pt width.8pt\vrule width2pt height.4pt depth.4pt}}%
 \def\excerptpause#1{\def\atnextbar{\znotes\centerbar{\liftpause{#1}}\enotes}}%
+\def\repetitionnumero#1#2{\def\atnextbar{\znotes\centerbar{\ccharnote{#2}{\medtype\bf{#1}}}\enotes}}%
 
 % long rests
 \edef\catcodeat{\the\catcode`\@}\catcode`\@=11
@@ -164,5 +158,4 @@
 }%
 
 \catcode`\@=\catcodeat
-\ifcorrectionmode \def\correction#1#2{#2} \else \def\correction#1#2{#1} \fi
 % % % % % % % % % % % % % % % %
