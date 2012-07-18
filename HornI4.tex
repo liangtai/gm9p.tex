@@ -8,56 +8,60 @@
 %setname1{Horn I.}
 \setclef1\treble
 
-\stafftopmarg=7\Interligne
-\staffbotmarg=6\Interligne
+\stafftopmarg=4\Interligne
+\staffbotmarg=4\Interligne
 \nobarnumbers
 \startpiece
 \mulooseness=0
 \systemnumbers
 % bar 1-2 [Horn I.]
-\znotes\uptext{\raise 25pt\hbox{\bigtype
- Sehr langsam und noch zur\"uckhaltend}}\enotes
+\notabene{0pt}{\vbox{\hbox{Sehr langsam und}\hbox{\enskip noch zur\"uckhaltend}}}%
 \qspace
+\longlongrest2{14}%
+\doublebar % bar 3-12 [Horn I.]
+\notabene{0pt}{\vbox{\hbox{a tempo}\hbox{\enskip\it(Molto adagio)}}}%
+\longlongrest{10}4%
+\bar % bar 13-14 [Horn I.]
+\notabene{9pt}{Straffer im Tempo}%
 \longrest2%
-\doublebar % bar 3-10 [Horn I.]
-\notabene{6pt}{a tempo \it(Molto adagio)}%
-\longrest8%
-\bar % bar 11 [Horn I.]
+\setclef1\bass\changeclefs
+\bar % bar 15 [Horn I.]
 \guideexcerptstyle%
-\addspace{-\afterruleskip}\setclef1\bass\changeclefs
-\znotes\ccharnote{`G}{\smalltype Fag.~I.}\enotes
-\NOtes\tinynotesize\qp\enotes
-\Notes\tinynotesize\ds\islurd0A\cu{_A}\hqsk\ibu0D3\qb0{_B}\hqsk\tslur0C\qb0{_C}\hqsk\qb0{_D}\hqsk\tbu0\qb0{_E}\enotes
+\znotes\ccharnote{b}{\smalltype Fag.I.}\enotes
+\NOTes\tinynotesize\itied0E\hu{_E}\enotes
+\Notes\tinynotesize\ibu0G0\ttie0\islurd0E\lsf E\qb0E\hqsk\tslur0D\qb0{=D}\lsf C\qb0C\tbu0\lsf D\qb0D\enotes
 \excerptpause1%
-\bar % bar 12 [Horn I.]
-\NOtes\tinynotesize\islurd0C\qu{_C}\enotes
-\Notes\tinynotesize\tslur0A\ibu0F3\qb0{_A}\hqsk\tbu0\islurd0B\qb0{_B}\ibu0G3\qb0C\enotes
-\notes\tinynotesize\hqsk\nbbu0\qb0{_D}\hqsk\tbbu0\tbu0\tslur0E\qb0{_E}\enotes
-\Notes\tinynotesize\hqsk\ibu0H3\islurd0E\lst F\qb0{_F}\hqsk\tbu0\tslur0F\lst G\qb0{_G}\enotes
+\bar % bar 16 [Horn I.]
+\NOtes\tinynotesize\isluru0L\lsf H\ql{_L}\tslur0K\lsf H\qu{_H}\isluru0J\lsf G\ql K\tslur0J\lsf D\qu D\enotes
 \excerptpause1%
 \defaultskipstyle%
 \setclef1\treble\changeclefs
-\bar % bar 13-16 [Horn I.]
-\longrest4%
 \bar % bar 17 [Horn I.]
 \NOtesp\ccharnote{M}{\ff}\zcharnote{q}{\smallppff stark hervortretend}\isluru0j\qlp j\enotes
 \Notes\tslur0i\cl{_i}\isluru0l\cl i\enotes
-\NOtes\qu{_h}\enotes
+\NOtes\hqsk\qu{_h}\enotes
 \Notes\tslur0i\cu g\enotes
 \bar % bar 18 [Horn I.]
 \Notes\isluru0m\ibu0g{-2}\qb0g\tbu0\qb0f\icresc\tslur0n\ibl0k{-2}\usf k\qb0{_k}\enotes
 \notes\nbbl0\qb0j\hqsk\tbbl0\tbl0\qb0{_i}\zcharnote{M}{\tdecresc}\enotes
 \NOtes\hqsk\zcharnote{L}{\smallppff dim.}\islurd0h\qu{_h}\tslur0e\qu{_e}\enotes
-\bar % bar 19-27 [Horn I.]
-\longrest9%
+\bar % bar 19-20 [Horn I.]
+\longrest2%
+\bar % bar 21-24 [Horn I.]
+\notabene{0pt}{Flie\ss end}%
+\longrest4%
+\bar % bar 25-27 [Horn I.]
+\notabene{0pt}{\vbox{\hbox{Etwas dr\"angend}\hbox{\enskip\it(unmerklich)}}}%
+\longlongrest39%
 \doublebar % bar 28-42 [Horn I.]
-\notabene{8pt}{\vbox{\hbox{Pl\"otzlich wieder sehr langsam}\hbox{{\it(wie zu Anfang)} und etwas z\"ogernd}}}%
-\longrest{15}%
+\notabene{0pt}{\vbox{\hbox{Pl\"otzlich wieder sehr langsam}\hbox{\enskip{\it(wie zu Anfang)} und etwas z\"ogernd}}}%
+\longlongrest{15}{22}%
 \bar % bar 43-45 [Horn I.]
+\notabene{0pt}{\vbox{\hbox{Etwas {\it(aber unmerklich)}}\hbox{\enskip dr\"angend}}}%
 \longrest3%
 \bar % bar 46 [Horn I.]
 \guideexcerptstyle%
-\znotes\zcharnote{K}{\smalltype II.}\enotes
+\znotes\lcharnote{K}{\smalltype Hrn.II.}\enotes
 \NOTes\tinynotesize\islurd0c\hu{^c}\enotes
 \Notes\tinynotesize\ibu0d{-2}\qb0{^dcb}\tbu0\tslur0a\qb0a\enotes
 \excerptpause1%
@@ -65,57 +69,94 @@
 \bar % bar 47-48 [Horn I.]
 \longrest2%
 \doublebar % bar 49 [Horn I.]
-\notabene{18pt}{\kern-\afterruleskip\hbox{Molto adagio subito \smalltype\tinynotesize(\cu 1\quad wie im letzten Takte die \qu 1\quad)}}%
+\notabene{18pt}{\vbox{\hbox{Molto adagio subito}\hbox{\medtype\tinynotesize(\cu 1\quad wie im letzten Takte die \qu 1\enskip)}}}%
+%notabene{18pt}{Molto adagio subito \medtype\tinynotesize(\cu 1\quad wie im letzten Takte die \qu 1\enskip)}%
 \Notes\ccharnote{L}{\f}\zcharnote{q}{\smallppff stark hervortretend}%
-	\ibl0j{-1}\isluru0j\qb0{j_kj}\tbl0\tslur0i\qb0{_i}\isluru0l\cl i\enotes
-\NOtes\qu{_h}\enotes
+	\ibl0j{-1}\isluru0j\qb0j\hqsk\qb0{_kj}\hqsk\tbl0\tslur0i\qb0{_i}%
+	\isluru0l\cl i\enotes
+\NOtes\hqsk\qu{_h}\enotes
 \Notes\tslur0i\cu g\enotes
 \bar % bar 50 [Horn I.]
 \notes\ibbu0g{-1}\islurd0g\qb0{gfe}\tbbu0\tbu0\tslur0f\qb0f\enotes
 \Notes\hqsk\ibl0k{-2}\qb0{_k}\enotes
 \notes\nbbl0\qb0j\hqsk\tbbl0\tbl0\qb0{_i}\enotes
 \NOtes\hqsk\icresc\islurd0h\qu{_h}\tslur0e\qu{_e}\loff{\zcharnote{N}{\tdecresc}}\enotes
-\bar % bar 51 [Horn I.]
+\bar % bar 51-55 [Horn I.]
 \longrest5%
-\bar % bar 56-61 [Horn I.]
-\longrest6%
+\setclef1\bass\changeclefs
+\bar % bar 56 [Horn I.]
+\guideexcerptstyle%
+%addspace{-\afterruleskip}\setclef1\bass\changeclefs
+\znotes\ccharnote{b}{\smalltype Hrn.II.,IV.}\enotes
+\znotes\lcharnote{B}{\smalltype zu 2}\enotes
+\NOTEs\tinynotesize\itied0E\wh{_E}\enotes
+\excerptpause1%
+\bar % bar 57 [Horn I.]
+\NOTEs\tinynotesize\ttie0\usf H\wh E\enotes
+\excerptpause1%
+\bar % bar 58 [Horn I.]
+\NOTEs\tinynotesize\itied0E\wh{_E}\enotes
+\excerptpause1%
+\bar % bar 59 [Horn I.]
+\NOTEs\tinynotesize\ttie0\wh E\enotes
+\excerptpause1%
+\setclef1\treble\changeclefs
+\bar % bar 60 [Horn I.]
+\NOTes\tinynotesize\hpause\enotes
+\NOtes\tinynotesize\itied0N\itieu1g\zh N\hu g\enotes
+\excerptpause1%
+\bar % bar 61 [Horn I.]
+\NOTes\tinynotesize\ttie0\ttie1\zh{_N}\hu{_g}\enotes
+\NOTes\tinynotesize\hpause\enotes
+\excerptpause1%
+\defaultskipstyle%
 \bar % bar 62 [Horn I.]
-\notabene{0pt}{\kern-\afterruleskip\vbox{\hbox{Pesan-}\hbox{te}}}%
-\longrest1%
-\bar % bar 63 [Horn I.]
-\notabene{8pt}{rit.}%
+\notabene{0pt}{Pesante}%
+\longlongrest11%
+\xbar % bar 63 [Horn I.]
+\notabene{0pt}{rit.}%
 \NOTEs\lcharnote{M}{\f}\zcharnote{N}{\decrescendo{.76\noteskip}}\hupp g\lcharnote{M}{\p}\enotes
 \Notes\ds\enotes
-\bar % bar 64-67 [Horn I.]
+\bar % bar 64-65 [Horn I.]
 \addspace{-\afterruleskip}\zalaligne
-\mulooseness=1
-\notabene{12pt}{a tempo (Molto adagio)}%
-\longrest4%
+%notabene{9pt}{\vbox{\hbox{a tempo}\hbox{\enskip(Molto adagio)}}}%
+\notabene{9pt}{a tempo (Molto adagio)}%
+\longrest2%
+\bar % bar 66 [Horn I.]
+\guideexcerptstyle%
+\znotes\zcharnote{o}{\smalltype Pos.}\enotes
+\NOtes\tinynotesize\hqsk\lsh d\islurd0b\isluru1h\zh b\zq d\hu{^f}\qu{=d}\tslur0a\tslur1h\zq{ac}\qu{=f}\qp\enotes
+\excerptpause1%
+\bar % bar 65 [Horn I.]
+\NOTes\tinynotesize\zh{^N^c}\hu e\enotes
+\NOtes\tinynotesize\islurd0N\isluru1f\zq{=Nb}\qu{=d}\tslur0L\tslur1f\zq{_L}\qu{_d}\enotes
+\excerptpause1%
+\defaultskipstyle%
 \bar % bar 68 [Horn I.]
 \NOtesp\lcharnote{M}{\f}\roff{\matz N}\isluru0j\qlp j\enotes
 \Notes\tslur0i\cl{_i}\enotes
-\NOtesp\roff{\matz N}\islurd0h\qup{_h}\enotes
+\NOtesp\hqsk\roff{\matz N}\islurd0h\qup{_h}\enotes
 \Notes\tslur0g\cu{_g}\enotes
 \bar % bar 69 [Horn I.]
-\Notes\hqsk\icresc\ibu0e3\islurd0d\qb0{^d}\tslur0e\qb0{=e=g}\tbu0\qb0j\enotes
+\Notes\hqsk\icresc\ibu0e5\islurd0d\qb0{^d}\hqsk\tslur0e\qb0{=e}\hqsk\qb0{=g}\tbu0\qb0j\enotes
 \NOtes\isluru0l\usf m\ql l\zcharnote{N}{\tcresc}\tslur0m\usf n\ql m\enotes
 \bar % bar 70 [Horn I.]
-\notabene{12pt}{Etwas (unmerklich) dr\"angend}%
+\notabene{9pt}{Etwas (unmerklich) dr\"angend}%
 \NOTes\hqsk\ccharnote{M}{\ff}\isluru0m\hl{^m}\ccharnote{M}{\sF}\tslur0h\hu{^h}\enotes
 \xbar % bar 71 [Horn I.]
 \NOtes\hqsk\isluru0k\ql{^k}\tslur0l\ql l\enotes
-\Notes\ibl0k{-2}\qb0{=k}\qb0{^j}\enotes
+\Notes\ibl0k{-3}\qb0{=k}\hqsk\qb0{^j}\enotes
 \Notesp\qbp0i\enotes
-\notes\tbbl0\tbl0\qb0{=h}\enotes
+\notes\hqsk\tbbl0\tbl0\qb0{=h}\enotes
 \bar % bar 72 [Horn I.]
-\NOtes\hqsk\loff{\zcharnote{N}{\crescendo{1\noteskip}}}\isluru0h\usf l\qu{=f}\ccharnote{L}{\sF}\tslur0l\ql{=l}%
+\NOtes\hqsk\loff{\zcharnote{N}{\crescendo{1\noteskip}}}\isluru0h\usf l\qu{=f}\ccharnote{L}{\sF}\tslur0i\ql{=i}%
 	\loff{\zcharnote{N}{\crescendo{1\noteskip}}}\isluru0i\qu e\ccharnote{M}{\sF}\tslur0k\ql k\enotes
 \bar % bar 73-84 [Horn I.]
-\notabene{12pt}{Wieder altes Tempo}%
-\longrest{12}%
+\notabene{9pt}{Wieder altes Tempo}%
+\longlongrest{12}2%
 \bar % bar 85 [Horn I.]
 \guideexcerptstyle%
-\znotes\zcharnote{p}{\smalltype B.-Klar., Fag.}\enotes
+\znotes\zcharnote{n}{\smalltype B.Klar.,Fag.}\enotes
 \NOtes\tinynotesize\islurd0a\qu{_a}\enotes
 \notes\tinynotesize\ibbu0d0\qb0{_baN}\tbbu0\tbu0\tslur0a\qb0a\enotes
 \NOTes\tinynotesize\hu h\enotes
@@ -129,157 +170,209 @@
 \NOtes\ttie0\ql l\qp\enotes
 \NOTes\hpause\enotes
 \doublebar % bar 88-106 [Horn I.]
-\notabene{4pt}{\vbox{\hbox{Stets sehr}\hbox{gehalten}}}%
-\longrest{19}%
-\bar % bar 107 [Horn I.]
-%addspace{-\afterruleskip}\zalaligne
-%mulooseness=0
-\notabene{16pt}{Flie\ss ender, doch durchaus nicht eilend}%
+\notabene{0pt}{\vbox{\hbox{Stets sehr}\hbox{\enskip gehalten}}}%
+\longlongrest{19}2%
+\bar % bar 107-109 [Horn I.]
+\notabene{6pt}{\vbox{\hbox{Flie\ss ender, doch durchaus}\hbox{\enskip nicht eilend}}}%
+\longrest3%
+\bar % bar 110 [Horn I.]
 \guideexcerptstyle%
-\znotes\zcharnote{M}{\smalltype Vln.II., Vla.}\enotes
-\NOtes\tinynotesize\hpause\enotes
-\notes\tinynotesize\multnoteskip\tinyvalue\isluru0l\grcu{^g}\enotes
-\NOtes\tinynotesize\hqsk\tslur0l\usf m\ql{^l}\usf m\ql{=l}\enotes
-\bar % bar 108 [Horn I.]
-\NOTes\tinynotesize\rlap{ \varline7{1.5\elemskip}{12}}\usf k\hl{^k}\enotes
-\notes\tinynotesize\multnoteskip\tinyvalue\ccu{^n}\enotes
-\Notes\tinynotesize\ibl0n0\isluru0n\qb0n\tslur0o\qb0o\usf o\qb0o\tbl0\usf n\qb0n\enotes
-\bar % bar 109 [Horn I.]
-\notes\tinynotesize\multnoteskip\tinyvalue\isluru0l\grcu h\enotes
-\NOTes\tinynotesize\hqsk\tslur0n\isluru0n\hl{=n}\tslur0m\hl m\enotes
+\znotes\zcharnote{n}{\smalltype Ob.}\enotes
+\NOTes\tinynotesize\hpause\enotes
+\NOtes\tinynotesize\qp\enotes
+\Notes\tinynotesize\ds\hqsk\isluru0n\cl{^n}\enotes
+\excerptpause{-3}%
+\bar % bar 111 [Horn I.]
+\NOTes\tinynotesize\tslur0o\hl{^o}\enotes
+\NOtes\tinynotesize\qp\enotes
+\Notes\tinynotesize\ds\hqsk\isluru0n\cl{^n}\enotes
+\excerptpause{-3}%
 \defaultskipstyle%
-\bar % bar 110-111 [Horn I.]
-\longrest2%
 \bar % bar 112 [Horn I.]
-\NOTes\hpause\ccharnote{M}{\p}\roff{\zcharnote{N}{\crescendo{1\noteskip}}}\itied0f\hu{^f}\enotes
+\znotes\tinynotesize\tslur0o\hu{^o}\enotes
+\NOTes\hpause\lcharnote{M}{\p}\icresc\itied0f\hu{^f}\enotes
 \bar % bar 113 [Horn I.]
 \notabene{12pt}{Nun etwas dr\"angend}%
-\NOtesp\ccharnote{M}{\f}\ttie0\qup f\enotes
+\NOtesp\loff{\zcharnote{N}{\tcresc}}\ccharnote{M}{\f}\ttie0\qup f\enotes
 \NOtes\usf m\qu{=g}\usf m\qu{^g}\enotes
 \Notes\usf n\cu{=h}\enotes
 \bar % bar 114 [Horn I.]
-\NOtes\hqsk\ccharnote{M}{\ff}\isluru0l\qu{^h}\tslur0m\ql{^m}\usf l\ql{^l}\usf k\ql{^k}\enotes
+\NOtes\hqsk\ccharnote{N}{\ff}\isluru0l\qu{^h}\tslur0m\ql{^m}\usf l\ql{^l}\usf k\ql{^k}\enotes
 \bar % bar 115 [Horn I.]
 \NOtesp\hqsk\isluru0k\qlp{=k}\enotes
-\Notes\tslur0j\cl j\ibl0l{-2}\qb0{_lkj}\tbl0\qb0{_i}\enotes
+\Notes\tslur0j\cl j\hqsk\ibl0l{-3}\qb0{_lkj}\hqsk\tbl0\qb0{_i}\enotes
 \bar % bar 116 [Horn I.]
 \NOTes\hqsk\itied0h\hu{_h}\enotes
-\Notes\ttie0\ibu0h2\qb0h\tbu0\qb0{_i}\enotes
+\Notes\ttie0\ibu0h3\qb0h\hqsk\tbu0\qb0{_i}\enotes
 \ninestyle%
-\Notes\triolet o\ibl0k1\qb0{_j}\hqsk\qb0{_l}\hqsk\tbl0\qb0{=l}\enotes
+\Notes\hqsk\triolet o\ibl0k1\qb0{_j}\hqsk\qb0{_l}\hqsk\tbl0\qb0{=l}\enotes
 \bar % bar 117 [Horn I.]
-\Notes\triolet p\ibl0n{-3}\qb0{nm}\hqsk\tbl0\qb0{=k}\enotes
+\Notes\triolet p\ibl0n{-4}\qb0{nm}\hqsk\tbl0\qb0{=k}\enotes
 \defaultskipstyle%
 \NOTes\hqsk\isluru0i\hl{=i}\enotes
 \NOtes\tslur0i\ql{_i}\enotes
 \doublebar % bar 118 [Horn I.]
 \notabene{16pt}{Sehr flie\ss end}%
-\NOTEs\hqsk\ccharnote{M}{\ff}\zcharnote{p}{\smalltype Schalltr. auf}\itieu0l\wh{_l}\enotes
+\NOTEs\hqsk\ccharnote{M}{\ff}\zcharnote{p}{\normtype Schalltr. auf}\itieu0l\wh{_l}\enotes
 \bar % bar 119 [Horn I.]
 \NOtes\zcharnote{N}{\crescendo{1\noteskip}}\ttie0\isluru0l\ql l\tslur0l\usf m\ql{=l}\usf l\ql l\usf l\ql{_l}\enotes
 \bar % bar 120 [Horn I.]
 \notabene{14pt}{Pesante}%
 \NOTes\hqsk\itieu0o\hl{_o}\enotes
 \Notes\multnoteskip{.667}\triolet p\ttie0\ibl0o0\qb0{on}\hqsk\tbl0\qb0{_p}\enotes
-\notes\ibbl0l{-2}\qb0o\hqsk\qb0{_l}\hqsk\qb0{_j}\hqsk\tbbl0\tbl0\qb0{_h}\enotes
+\notes\ibbl0l{-5}\qb0o\hqsk\qb0{_l}\hqsk\qb0{_j}\hqsk\tbbl0\tbl0\qb0{_h}\enotes
 \bar % bar 121 [Horn I.]
 \NOTEs\hqsk\icresc\isluru0h\wh{_g}\zcharnote{N}{\tcresc}\enotes
 \bar % bar 122 [Horn I.]
 \NOTEs\ccharnote{M}{\sF}\tslur0o\wh o\enotes
 \bar % bar 123-125 [Horn I.]
-\addspace{-\afterruleskip}\zalaligne
-\mulooseness=0
-%notabene{0pt}{\vbox{\hbox{Wieder}\hbox{zur\"uckhaltend}}}%
-\longrest3%
+\notabene{0pt}{\vbox{\hbox{Wieder}\hbox{zur\"uckhaltend}}}%
+\longlongrest34%
 \doublebar % bar 126 [Horn I.]
 \notabene{12pt}{Tempo~I. Molto adagio \it(Noch breiter als zu Anfang)}%
 \Notes\hqsk\ccharnote{M}{\ff}\isluru0l\ibl0j0\qb0{_l}\enotes
 \notes\multnoteskip{.73}\nbbbl0\qb0{mlk}\tbbbl0\tbbl0\tbl0\qb0l\enotes
 \notes\ccharnote{M}{\sF}\tslur0n\ibbl0n{-2}\qb0{nml}\hqsk\tbbl0\tbl0\qb0{_k}\enotes
-\Notes\ibl0k{-2}\isluru0k\usf l\qb0k\tbl0\tslur0k\itieu0j\usf l\qb0{_j}\enotes
+\Notes\ibl0k{-3}\isluru0k\usf l\qb0k\hqsk\tbl0\tslur0k\itieu0j\usf l\qb0{_j}\enotes
 \notes\ttie0\ibbl0j{-1}\isluru0j\qb0j\hqsk\tslur0j\qb0{=j}\hqsk\usf j\qb0{^j}\hqsk\tbbl0\tbl0\usf h\qb0{=h}\enotes
 \bar % bar 127 [Horn I.]
 \Notes\hqsk\isluru0o\ibu0i0\qb0{=g}\enotes
-\notes\multnoteskip{.8}\nbbbu0\qb0{=hg}\hqsk\qb0{^f}\tbbbu0\tbbu0\tbu0\qb0g\enotes
+\notes\multnoteskip{.82}\nbbbu0\qb0{=hg}\hqsk\qb0{^f}\tbbbu0\tbbu0\tbu0\qb0g\enotes
 \notes\qsk\ibbl0i0\qb0{^m}\hqsk\tslur0l\qb0{=lg}\tbbl0\tbl0\qb0h\enotes
 \NOTes\zcharnote{N}{\decrescendo{1\noteskip}}\hl i\enotes
 \znotes\zbreath\enotes
 \bar % bar 128 [Horn I.]
 \NOtes\hqsk\ccharnote{M}{\ff}\usf k\ql{^k}\enotes
-\Notes\icresc\ibl0j{-2}\usf j\qb0{^j}\tbl0\usf i\qb0i\roff{\zcharnote{N}{\tdecresc}}\enotes
+\Notes\icresc\ibl0j{-3}\usf j\qb0{^j}\tbl0\usf i\qb0i\roff{\zcharnote{N}{\tdecresc}}\enotes
 \NOTes\isluru0e\hu{=e}\enotes
 \bar % bar 129 [Horn I.]
 \NOtes\ccharnote{M}{\ff}\tslur0l\usf m\ql l\enotes
-\Notes\ibl0k{-2}\usf k\qb0{^k}\tbl0\usf j\qb0{^j}\enotes
+\Notes\ibl0k{-3}\usf k\qb0{^k}\hqsk\tbl0\usf j\qb0{^j}\enotes
 \NOtes\zcharnote{N}{\decrescendo{1\noteskip}}\islurd0g\qu g\enotes
 \notes\ibbu0g{-1}\roff{\icresc}\tslur0g\qb0{_g}\lsf f\qb0f\loff{\zcharnote{N}{\tcresc}}\lsf e\qb0e\tbbu0\tbu0\lsf f\qb0f\enotes
 \bar % bar 130 [Horn I.]
 \Notes\hqsk\ccharnote{M}{\ff}\isluru0k\cl{_k}\enotes
 \NOtes\ql j\enotes
 \Notes\tslur0i\cl{_i}\islurd0i\cu i\enotes
-\NOtes\qu{_h}\enotes
+\NOtes\hqsk\qu{_h}\enotes
 \Notes\tslur0g\cu{_g}\enotes
 \bar % bar 131 [Horn I.]
-\Notes\isluru0i\ibl0h0\qb0{=i=h=g}\tbl0\itieu1k\qb0{_k}\ttie1\cl k\enotes
-\NOtes\ql{_j}\enotes
+\Notes\hqsk\isluru0i\ibl0h0\qb0{=i}\hqsk\qb0{=h}\hqsk\qb0{=g}\hqsk\tbl0\itieu1k\qb0{_k}\ttie1\cl k\enotes
+\NOtes\hqsk\ql{_j}\enotes
 \Notes\tslur0j\itieu0i\cl{_i}\enotes
 \bar % bar 132 [Horn I.]
 \Notes\ttie0\isluru0i\cl i\enotes
-\NOtes\roff{\zcharnote{N}{\crescendo{10\elemskip}}}\qu{_h}\enotes
-\Notes\tslur0k\cl{=j}\islurd0i\cu{=i}\enotes
-\NOtes\qu{=h}\enotes
+\NOtes\hqsk\roffset3{\zcharnote{N}{\crescendo{10\elemskip}}}\qu{_h}\enotes
+\Notes\tslur0k\cl{=j}\hqsk\islurd0i\cu{=i}\enotes
+\NOtes\hqsk\qu{=h}\enotes
 \Notes\tslur0e\cu{=e}\enotes
 \bar % bar 133 [Horn I.]
-\NOtes\ccharnote{M}{\p}\zcharnote{M}{\quad\smallppff subito}\qu f\enotes
-\notes\ibbu0g{-1}\qb0{_gfe}\tbbu0\tbu0\qb0f\enotes
-\NOTes\qsk\ccharnote{M}{\pp}\zcharnote{M}{\quad\smallppff morendo}\hl{=l}\enotes
+\NOtes\ccharnote{N}{\p}\zcharnote{N}{ \enskip\smallppff subito}\qu f\enotes
+\notes\ibbu0g{-1}\qb0{_gfe}\zcharnote{N}{\smallppff morendo}\tbbu0\tbu0\qb0f\enotes
+\NOTes\qsk\ccharnote{o}{\pp}\hl{=l}\enotes
 \bar % bar 134 [Horn I.]
 \longrest1%
 \bar % bar 135 [Horn I.]
-\NOtes\zcharnote{M}{\smallppff molto espress.}\icresc\ql j\enotes
+\NOtes\zcharnote{K}{\smallppff molto espress.}\icresc\ql j\enotes
 \Notesp\ibl0k0\qbp0{_k}\enotes
-\notes\tbbl0\tbl0\zcharnote{p}{\tdecresc}\qb0{=k}\enotes
+\notes\tbbl0\tbl0\zcharnote{a}{\tcresc}\qb0{=k}\enotes
 \Notes\isluru0m\usf n\cl m\enotes
-\NOtesp\tslur0l\usf m\qlp{_l}\enotes
+\NOtesp\hqsk\tslur0l\usf m\qlp{_l}\enotes
 \bar % bar 136 [Horn I.]
 \longrest1%
-\generalmeter{\meterfrac64}\changecontext%
-\addspace{-\afterruleskip}\zalaligne
 % bar 137 [Horn I.]
+\generalmeter{\meterfrac64}\changecontext
 \addspace{-\afterruleskip}%
-\generalmeter{\meterfrac64}\zchangecontext%
 \longrest1%
+\generalmeter{\meterfrac44}\changecontext
+\addspace{-\afterruleskip}\zalaligne
 % bar 138 [Horn I.]
-\generalmeter{\meterfrac44}\changecontext%
+\addspace{-\afterruleskip}%
+\generalmeter{\meterfrac44}\zchangecontext
+\addspace{-\afterruleskip}%
 \NOtes\ccharnote{M}{\pp}\zcharnote{M}{\quad\smallppff ma espress.}\ql j\enotes
 \Notesp\ibl0j{-2}\qbp0j\enotes
-\notes\tbbl0\tbl0\qb0{_i}\enotes
+\notes\hqsk\tbbl0\tbl0\qb0{_i}\enotes
 \NOtesp\hqsk\islurd0h\qup{_h}\enotes
 \Notes\tslur0g\cu{_g}\enotes
 \bar % bar 139 [Horn I.]
-\Notes\hqsk\ibu0k0\islurd0e\qb0{=e}\tslur0l\qb0{=l^k}\tbu0\islurd0i\qb0{^j}\enotes
-\NOTes\tslur0g\usf m\hu{^g}\enotes
+\Notes\hqsk\ibu0k0\islurd0e\qb0{=e}\hqsk\tslur0l\qb0{=l}\hqsk\qb0{^k}\hqsk\tbu0\islurd0i\qb0{^j}\enotes
+\NOTes\hqsk\tslur0f\usf m\hu{^g}\enotes
 \bar % bar 140 [Horn I.]
 \NOtes\hqsk\qu{^f}\enotes
-\notes\zcharnote{M}{\textleader{15}{\smallppff cresc.}}\ibbu0g{-1}\qb0{^gf}\hqsk\qb0{^e}\tbbu0\tbu0\qb0f\enotes
+\notes\zcharnote{M}{\textleader{31}{\smallppff cresc.}}\ibbu0g{-1}\qb0{^gf}\hqsk\qb0{^e}\tbbu0\tbu0\qb0f\enotes
 \NOTes\hu h\enotes
 \bar % bar 141 [Horn I.]
-\znotes\zcharnote{M}{\textleader{15}\null}\enotes
 \NOtes\hqsk\qu{=g}\enotes
 \notes\ibbu0h{-1}\qb0{hg}\hqsk\qb0{^f}\tbbu0\tbu0\qb0g\enotes
-\NOTes\hqsk\zcharnote{N}{\crescendo{1\noteskip}}\hl{=i}\enotes
+\NOTes\hqsk\icresc\hl{=i}\zcharnote{N}{\tcresc}\enotes
 \bar % bar 142 [Horn I.]
-\NOtes\hqsk\ccharnote{M}{\f}\isluru0l\ql{=l}\tslur0i\ql i\enotes
+\NOtes\hqsk\ccharnote{N}{\f}\isluru0l\ql{=l}\tslur0i\ql i\enotes
 \NOtesp\isluru0k\qlp{^k}\enotes
 \Notes\tslur0j\cl{^j}\enotes
 \bar % bar 143 [Horn I.]
 \NOtes\icresc\isluru0i\ql i\roff{\zcharnote{N}{\tcresc}}\tslur0h\qu{^g}\enotes
 \NOTes\ccharnote{M}{\sF}\isluru0k\hl{=k}\enotes
 \bar % bar 144 [Horn I.]
-\NOtes\hqsk\ccharnote{L}{\ff}\tslur0l\isluru0k\ql{_k}\enotes
+\NOtes\hqsk\ccharnote{M}{\ff}\tslur0l\isluru0k\ql{_k}\enotes
 \notes\tslur0j\ibbl0i0\qb0j\hqsk\qb0{_ih}\tbbl0\tbl0\qb0i\enotes
 \NOtesp\hqsk\zcharnote{N}{\decrescendo{1\noteskip}}\isluru0l\qlp{_l}\enotes
 \Notes\tslur0k\cl{_k}\enotes
-\bar % bar 145-~ [Horn I.]
-\tacet{41}2%
+\bar % bar 145-147 [Horn I.]
+\longrest3%
+\bar % bar 148 [Horn I.]
+\guideexcerptstyle%
+\znotes\ccharnote{o}{\smalltype Ob.}\enotes
+\NOtes\tinynotesize\isluru0m\ql m\enotes
+\Notesp\tinynotesize\hqsk\tslur0l\ibl0l{-3}\qbp0{_l}\enotes
+\notes\tinynotesize\hqsk\tbbl0\tbl0\qb0{_k}\enotes
+\NOTes\tinynotesize\hl j\enotes
+\excerptpause{-3}%
+\bar % bar 149 [Horn I.]
+\znotes\ccharnote{o}{\smalltype Fl.}\enotes
+\NOtes\tinynotesize\hqsk\loff{\sh j}\islurd0e\isluru1l\zq{=hj}\ql{=l}\enotes
+\Notesp\tinynotesize\hqsk\loff{\na i}\tslur0c\tslur1k\ibl0h{-3}\zqb0{^f}\zqbp0i\qbp0{^k}\enotes
+\notes\tinynotesize\hqsk\loff{\na h}\tbbl0\tbl0\zqb0h\qb0{^j}\enotes
+\NOTes\tinynotesize\hqsk\zq{^f}\hu{=i}\enotes
+\excerptpause{-5}%
+\defaultskipstyle%
+\bar % bar 150 [Horn I.]
+\longrest1%
+\bar % bar 151 [Horn I.]
+\guideexcerptstyle%
+\znotes\ccharnote{o}{\smalltype Englh.}\enotes
+\NOtes\tinynotesize\ql j\enotes
+\Notesp\tinynotesize\ibl0i{-3}\qbp0i\enotes
+\notes\tinynotesize\tbbl0\tbl0\qb0h\enotes
+\NOTes\tinynotesize\hu c\enotes
+\excerptpause1%
+\defaultskipstyle%
+\bar % bar 152-158 [Horn I.]
+\longrest7%
+\znotes\fermataup m\enotes
+\bar % bar 159-161 [Horn I.]
+\addspace{-\afterruleskip}\zalaligne
+\notabene{0pt}{Adagissimo}%
+\longlongrest34%
+\xbar % bar 162-169 [Horn I.]
+\notabene{0pt}{Langsam und \ppp{} bis zum Schlu\ss}%
+\longlongrest81%
+\generalmeter{\meterfrac32}\changecontext
+% bar 170 [Horn I.]
+\longrest1%
+% bar 171-178 [Horn I.]
+\generalmeter{\meterfrac44}\changecontext
+\longlongrest81%
+\bar % bar 179-182 [Horn I.]
+\notabene{0pt}{\"Au\ss erst langsam}%
+\longrest4%
+% bar 183 [Horn I.]
+\generalmeter{\meterfrac32}\changecontext
+\longrest1%
+% bar 184-185 [Horn I.]
+\generalmeter{\meterfrac44}\changecontext
+\longrest1%
+\bar % bar 185 [Horn I.]
+\addspace{8\elemskip}%
+\def\atnextbar{\znotes\centerbar{\Fermataup m}\centerpause\enotes}%
 \Endpiece
