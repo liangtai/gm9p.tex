@@ -1,13 +1,14 @@
 % format tex
 \input musixtex
 
+\font\doubledtenrm=cmr5 at 10pt
 % general style [A4:default]
 \musicparskip\parindent12mm
 \bigaccid
 \nopagenumbers % supress footlines
 \headline={\ifnum\pageno=1\else \ifodd\pageno\rightheadline \else\leftheadline\fi \fi}
-\def\rightheadline{\tenrm\hfil\folio}
-\def\leftheadline{\tenrm\folio\hfil}
+\def\rightheadline{\hfil{\doubledtenrm \part{} / MAHLER---SYMPHONIE IX}\hfil\tenrm\folio}
+\def\leftheadline{\tenrm\folio\hfil{\doubledtenrm \part{} / MAHLER---SYMPHONIE IX}\hfil}
 %voffset=1\baselineskip
 \nostartrule
 % bar number without box
@@ -104,43 +105,61 @@
 \def\longrest#1{%
   \ifnum#1>4
     \znotes\uptext{\lower3\Interligne\hbox{\overlong}}\enotes
-    \znotes\uptext{\lower8\Interligne\hbox to 8.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \znotes\uptext{\lower7\Interligne\hbox to 8.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
     \addspace{10\elemskip}%
   \else\ifnum#1=4
-    \znotes\uptext{\lower8\Interligne\hbox to 8.00\elemskip{\hss{\bigtype#1}\hss}}\enotes
-	\qspace
-    \Notes\sk\PAUSe\sk\enotes
+    \znotes\uptext{\lower7\Interligne\hbox to 8.00\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \Notes\hqsk\sk\PAUSe\sk\enotes
 	%addspace{7.5\elemskip}%
 	%def\atnextbar{\znotes\centerbar{\PAUSe}\enotes}%
   \else\ifnum#1=3
-    \znotes\uptext{\lower8\Interligne\hbox to 6.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \znotes\uptext{\lower7\Interligne\hbox to 6.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
     \notes\sk\PAuse\pause\sk\enotes
 	%addspace{7.0\elemskip}%
 	%def\atnextbar{\znotes\centerbar{\PAuse\qsk\pause}\enotes}%
   \else\ifnum#1=2
-    \znotes\uptext{\lower8\Interligne\hbox to 4.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
+    \znotes\uptext{\lower7\Interligne\hbox to 4.66\elemskip{\hss{\bigtype#1}\hss}}\enotes
     \notes\sk\PAuse\sk\enotes
 	%addspace{6.5\elemskip}%
 	%def\atnextbar{\znotes\centerbar{\PAuse}\enotes}%
   \else%ifnum#1=1
+    \znotes\uptext{\lower7\Interligne\hbox to 4.8\elemskip{\hss{\bigtype#1}\hss}}\enotes
     \NOtes\hsk\pause\enotes
 	%addspace{6.0\elemskip}%
 	%def\atnextbar{\znotes\centerpause\enotes}%
   \fi\fi\fi\fi
   \incrementbar{#1}%
   }
-\newdimen\p@useb@rwidth
 \newdimen\interb@rswidth
 \newdimen\restdispl@ywidth
+\newdimen\p@useb@rwidth
 \def\longlongrest#1#2{%
-  \p@useb@rwidth=#2\elemskip
   \interb@rswidth=#2\elemskip
   \restdispl@ywidth=#2\elemskip
-  \advance\p@useb@rwidth by 8.33\elemskip
-  \advance\restdispl@ywidth by 8.66\elemskip
-  \advance\interb@rswidth by 10\elemskip
-  \znotes\uptext{\lower3\Interligne\hbox{\s@r\vrule\@width\p@useb@rwidth\@height\h@lf\internote\@depth\h@lf\internote\s@r}}\enotes
-  \znotes\uptext{\lower8\Interligne\hbox to\restdispl@ywidth{\hss{\bigtype#1}\hss}}\enotes
+  \ifnum#1>4
+    \advance\restdispl@ywidth by 8.66\elemskip
+    \advance\interb@rswidth by 10\elemskip
+    \p@useb@rwidth=\restdispl@ywidth
+    \advance\p@useb@rwidth by -0.33\elemskip
+    \znotes\uptext{\lower3\Interligne\hbox{\s@r\vrule\@width\p@useb@rwidth\@height\h@lf\internote\@depth\h@lf\internote\s@r}}\enotes
+  \else\ifnum#1=4
+    \advance\restdispl@ywidth by 8.33\elemskip
+    \advance\interb@rswidth by 10\elemskip
+	\def\atnextbar{\znotes\centerbar{\PAUSe}\enotes}%
+  \else\ifnum#1=3
+    \advance\restdispl@ywidth by 6.66\elemskip
+    \advance\interb@rswidth by 8.33\elemskip
+	\def\atnextbar{\znotes\centerbar{\loff{\PAuse}\roff{\pause}}\enotes}%
+  \else\ifnum#1=2
+    \advance\restdispl@ywidth by 4.66\elemskip
+    \advance\interb@rswidth by 5.3\elemskip
+	\def\atnextbar{\znotes\centerbar{\PAuse}\enotes}%
+  \else%ifnum#1=1
+    \advance\restdispl@ywidth by 4.80\elemskip
+    \advance\interb@rswidth by 6.7\elemskip
+	\def\atnextbar{\znotes\centerbar{\pause}\enotes}%
+  \fi\fi\fi\fi
+  \znotes\uptext{\lower7\Interligne\hbox to \restdispl@ywidth{\hss{\bigtype#1}\hss}}\enotes
   \addspace\interb@rswidth%
   \incrementbar{#1}%
 }%
